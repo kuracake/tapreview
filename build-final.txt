@@ -1,0 +1,36 @@
+▲ Next.js 16.4.3 (Turbopack)
+✓ Running next.config.ts took 96ms
+- Cache Components enabled
+- Partial Prefetching enabled
+
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 2 errors:
+./src/app/dashboard/layout.tsx:10:10
+Error: the name `logout` is defined multiple times
+  [90m 8 |[0m
+  [90m 9 |[0m [36mimport[0m { requireAdmin } [36mfrom[0m [32m"@/lib/auth"[0m;
+[31m[1m>[0m [90m10 |[0m [36mimport[0m { logout } [36mfrom[0m [32m"@/app/login/actions"[0m;
+  [90m   |[0m          [31m[1m^^^^^^[0m
+  [90m11 |[0m
+  [90m12 |[0m [36mexport[0m [36mdefault[0m [36masync[0m [36mfunction[0m [33mDashboardLayout[0m({
+  [90m13 |[0m   children,
+
+Ecmascript file had an error
+
+
+./src/app/dashboard/layout.tsx:9:10
+Error: the name `requireAdmin` is defined multiple times
+  [90m 7 |[0m [36mexport[0m [36mconst[0m instant = [36mfalse[0m;
+  [90m 8 |[0m
+[31m[1m>[0m [90m 9 |[0m [36mimport[0m { requireAdmin } [36mfrom[0m [32m"@/lib/auth"[0m;
+  [90m   |[0m          [31m[1m^^^^^^^^^^^^[0m
+  [90m10 |[0m [36mimport[0m { logout } [36mfrom[0m [32m"@/app/login/actions"[0m;
+  [90m11 |[0m
+  [90m12 |[0m [36mexport[0m [36mdefault[0m [36masync[0m [36mfunction[0m [33mDashboardLayout[0m({
+
+Ecmascript file had an error
+
+
+    at ignore-listed frames
