@@ -19,6 +19,9 @@ export default async function DashboardLayout({
           <Link href="/dashboard/businesses" className="text-gray-600 hover:text-gray-900">
             Bisnis
           </Link>
+          <Link href="/dashboard/cards" className="text-gray-600 hover:text-gray-900">
+            Kartu
+          </Link>
         </nav>
         <div className="flex items-center gap-4 text-sm text-gray-600">
           <span>{user.email}</span>
